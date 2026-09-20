@@ -704,7 +704,7 @@ function App() {
 
             <img
               src={
-                currentSong?.imageUrl || "/helusic_cd.jpeg"
+                currentSong?.imageUrl || "/og-image.jpeg"
               }
 
               alt="Music"
