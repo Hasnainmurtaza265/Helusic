@@ -322,7 +322,7 @@ function App() {
     setIsPlaying(false);
 
     setError(
-      "Audio load nahi ho saka. Please another song try karo."
+      "Audio couldn’t be loaded. Please try another song."
     );
   };
 
@@ -407,7 +407,7 @@ function App() {
 
     const nextIndex =
       currentIndex ===
-      songs.length - 1
+        songs.length - 1
         ? 0
         : currentIndex + 1;
 
@@ -473,7 +473,8 @@ function App() {
       <aside className="sidebar">
 
         <h1>
-          Desi<span>Tunes</span>
+          {/* Desi<span>Tunes</span> */}
+          <span>Helusic</span>
         </h1>
 
         <nav>
@@ -703,9 +704,9 @@ function App() {
 
             <img
               src={
-                currentSong?.imageUrl ||
-                "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
+                currentSong?.imageUrl || "/helusic_cd.jpeg"
               }
+
               alt="Music"
             />
 
@@ -834,10 +835,9 @@ function App() {
           <div
             className="mini-img"
             style={{
-              backgroundImage: `url(${
-                currentSong?.imageUrl ||
+              backgroundImage: `url(${currentSong?.imageUrl ||
                 ""
-              })`,
+                })`,
             }}
           ></div>
 
